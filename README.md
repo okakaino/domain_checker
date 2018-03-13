@@ -1,2 +1,4 @@
-# alexa-whois
+# domain_checker
 使用python爬虫爬取域名的whois信息并存如mysql数据库
+
+python爬虫的基本使用及python语言的高级用法（元类）
