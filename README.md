@@ -5,4 +5,5 @@ python爬虫的基本使用及python语言的高级用法（元类）
 
 使用方法：
 1. activate your python3 virtual environment
-2. python run.py
+2. install dependencies: pip install -r requirements.txt
+3. python run.py
