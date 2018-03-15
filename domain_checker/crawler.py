@@ -35,7 +35,7 @@ class Crawler(object, metaclass=CrawlerMeta):
     def crawl(self, domain):
         self.__class__.crawl_func = choice(self.__CrawlFunc__)
         logger.debug('checking {} with method {}'.format(domain, self.crawl_func.__name__))
-        return self.crawl_func(domain, headers)
+        return self.crawl_func(domain)
 
     def fetch_html(self, url, headers, data=None, timeout=None):
         '''download html'''
