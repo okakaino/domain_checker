@@ -46,7 +46,7 @@ class Crawler(object, metaclass=CrawlerMeta):
                 r = requests.get(url, headers=headers, timeout=timeout)
             if r.status_code == 200:
                 logger.debug('html downloaded')
-                return response
+                return r.text
             else:
                 logger.debug('failed to fetch html with status code {}'.format(r.status_code))
         except Exception as e:
